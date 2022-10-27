@@ -45,33 +45,50 @@ This type of counter is normally referred to as a Down Counter, (CTD). In a bina
 
 
 4-bit Count Down Counter
+### Procedure
+
+1.Create a new project in QuartusII software.
+
+2.Name the project as uc for upcounter and dc for down counter.
+
+3.Create a new verilog hdl file in the project file.
+
+4.Name the module as dc and uc for down counter and up counter.
+
+5.Within the module declare input and output variables.
+
+6.Create a loop using if-else with condition parameter as reset value.
+
+7.End the loop.
+
+8.End the module.
 
 
-
-### PROGRAM 
-~~~
+### PROGRAM :
+```
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: S.Harish kumar
-RegisterNumber:  212221230104
-~~~
+Developed by:P.Siva Naga Nithin
+RegisterNumber:212221240037 
+```
 
-### UP COUNTER:
-~~~
-module UC(input CLK,input reset,output[0:3]counter);
+## Up Counter:
+```
+module exp6(input CLK, input reset,output[0:3]counter);
 reg[0:3]counter_up;
 always@(posedge CLK or posedge reset)
-begin 
+begin
 if(reset)
-counter_up<=4'd0;
+counter_up <=4'd0;
 else
-counter_up<=counter_up+4'd1;
+counter_up <=counter_up+4'd1;
 end
-assign counter=counter_up;
+assign counter = counter_up;
 endmodule
-~~~
-### DOWN COUNTER:
-~~~
-module downcounter(input CLK,input reset,output[0:3]counter);
+```
+
+### Down Counter:
+```
+module down(input CLK,input reset,output[0:3]counter);
 reg[0:3]counter_down;
 always@(posedge CLK or posedge reset)
 begin 
@@ -82,40 +99,35 @@ counter_down<=counter_down-4'd1;
 end
 assign counter=counter_down;
 endmodule
-
-~~~
-
-
-
-
-### RTL LOGIC UP COUNTER AND DOWN COUNTER  
-
-### UP COUNTER:
-
- ![image](https://user-images.githubusercontent.com/94154712/198282738-d9b3f8d7-9ab1-4980-9320-0e3c51328b3c.png)
-### DOWN COUNTER:
-![image](https://user-images.githubusercontent.com/94154712/198282865-08631cc5-1ecd-415c-9e73-4d3c35940caf.png)
+```
 
 
 
 
 
 
-### TIMING DIGRAMS FOR COUNTER  
-### UP COUNTER:
-![image](https://user-images.githubusercontent.com/94154712/198282986-9eb8520a-eded-470a-9423-a1813710c977.png)
+
+### RTL LOGIC UP COUNTER AND DOWN COUNTER 
+![github.logo](exp6.png)
+### Down Counter
+![github.logo](exp6.png)
 
 
-### DOWN COUNTER:
-![image](https://user-images.githubusercontent.com/94154712/198283028-5e220b1d-39ac-4c3a-bd3a-aa8b15548284.png)
+### TIMING DIGRAMS FOR COUNTER 
+![github.logo](td.png)
+### Down Counter
+![github.logo](td2.jpeg)
+
 
 ### TRUTH TABLE 
-### UP COUNTER:
-![image](https://user-images.githubusercontent.com/94154712/198283083-c16f3b4d-5891-474c-83de-6e8809645166.png)
+![up truth table](https://user-images.githubusercontent.com/94154621/198284534-49743e4b-795f-467f-bade-d6108fcc3d73.png)
+![dc truth table](https://user-images.githubusercontent.com/94154621/198284552-1a652c96-733b-4973-acb2-a43579107c87.png)
 
-### DOWN COUNTER:
 
-![image](https://user-images.githubusercontent.com/94154712/198283319-ad0b5a05-e33a-4183-9e39-c6e5d606eefe.png)
+
+
+
+
 
 
 ### RESULTS 
