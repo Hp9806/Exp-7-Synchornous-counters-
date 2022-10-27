@@ -115,6 +115,8 @@ endmodule
 
 ### TIMING DIGRAMS FOR COUNTER 
 ![github.logo](td.png)
+### Down Counter
+![github.logo](td2.png)
 
 
 
@@ -130,3 +132,4 @@ endmodule
 
 
 ### RESULTS 
+The program is successfully executed to create 4bit-upcounter and 4bit-downcounter, the RTL simulisation is generated and wafe form is also generated.
