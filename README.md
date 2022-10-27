@@ -121,6 +121,8 @@ endmodule
 
 ### TRUTH TABLE 
 ![up truth table](https://user-images.githubusercontent.com/94154621/198284534-49743e4b-795f-467f-bade-d6108fcc3d73.png)
+
+### Down Counter
 ![dc truth table](https://user-images.githubusercontent.com/94154621/198284552-1a652c96-733b-4973-acb2-a43579107c87.png)
 
 
